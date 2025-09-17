@@ -1,4 +1,4 @@
-package com.valdir.todo.services.exceptions;
+package com.valdir.todo.exceptions;
 
 public class ObjectNotFoundException extends RuntimeException {
 

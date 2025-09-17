@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.valdir.todo.services.exceptions.ObjectNotFoundException;
+import com.valdir.todo.exceptions.ObjectNotFoundException;
 
 import jakarta.servlet.ServletRequest;
 

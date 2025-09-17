@@ -21,7 +21,7 @@ import com.valdir.todo.services.TodoService;
 
 @CrossOrigin("*") //Significa que nossa API nesse endpoint (/todos) pode receber  requisições de multiplas fontes 
 @RestController
-@RequestMapping(value = "/todos")
+@RequestMapping(value = "/todos") //em que endpoint esses métodos serão executados.
 public class TodoResource {
 
 	@Autowired
@@ -62,7 +62,7 @@ public class TodoResource {
 	}
 
 	@PostMapping
-	public ResponseEntity<Todo> create(@RequestBody Todo obj) {
+	public ResponseEntity<Todo> create(@RequestBody Todo obj) { //RequestBody diz que vou receber um json de Todo no body 
 
 		obj = service.create(obj);
 

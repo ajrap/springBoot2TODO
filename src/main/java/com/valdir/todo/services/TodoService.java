@@ -3,13 +3,14 @@ package com.valdir.todo.services;
 import java.util.List;
 import java.util.Optional;
 
+import com.valdir.todo.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.valdir.todo.domain.Todo;
 import com.valdir.todo.repository.TodoRepository;
 
-import com.valdir.todo.services.exceptions.*;
+
 
 @Service
 public class TodoService {
